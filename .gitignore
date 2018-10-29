@@ -1,3 +1,5 @@
 air2g/
 config.ini
 *.pyc
+credentials.json
+token.json
