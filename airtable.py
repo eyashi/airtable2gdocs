@@ -56,7 +56,7 @@ class Airtable(object):
                              params=params,
                              data=payload,
                              headers=self.headers)
-        if r.status_code == requests.codes.ok:
+        if r.ok:
             return r.json(object_pairs_hook=OrderedDict)
         else:
             try:
