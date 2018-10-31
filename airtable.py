@@ -1,6 +1,7 @@
 '''
 Airtable Python communicator from:
 https://github.com/nicocanali/airtable-python
+Thank you for making the prototyping of this super easy.
 '''
 
 import json

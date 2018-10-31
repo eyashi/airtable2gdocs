@@ -3,3 +3,5 @@ config.ini
 *.pyc
 credentials.json
 token.json
+test1.docx
+*.notes
