@@ -29,6 +29,8 @@ def main():
 
             if upload_resp:
                 os.remove(docPath)
+                at.delete(config['AIRTABLE']['TABLE_ID'], record['id'])
+                print('Success!')
 
 if __name__ == '__main__':
     main()
