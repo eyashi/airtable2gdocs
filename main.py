@@ -26,7 +26,9 @@ def main():
         for record in resp['records']:
             docPath = doc.writeDoc(record)
             upload_resp = drive.uploadFile(docPath)
-            print(upload_resp)
+
+            if upload_resp:
+                os.remove(docPath)
 
 if __name__ == '__main__':
     main()
